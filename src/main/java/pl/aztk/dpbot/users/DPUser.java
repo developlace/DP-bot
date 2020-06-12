@@ -89,10 +89,6 @@ public class DPUser {
         return false;
     }
 
-    public boolean isFreshman(){
-        return this.sentMessageCount <= 50;
-    }
-
     public int getSentMessageCount() {
         return sentMessageCount;
     }

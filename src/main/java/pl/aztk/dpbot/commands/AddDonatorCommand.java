@@ -20,14 +20,8 @@ public class AddDonatorCommand implements Command{
     public void execute(String[] args, MessageReceivedEvent event) {
         if(event.getMember().getPermissions().contains(Permission.ADMINISTRATOR)){
             if(args.length == 1){
-                event.getTextChannel().sendMessage("Użyie dp!adddonator @wzmianka kwota").queue();
+                event.getTextChannel().sendMessage("Użyie dp!adddonator addNewDonation @wzmianka kwota").queue();
                 return;
-            }
-            if(args.length == 3){
-                if(event.getMessage().getMentionedUsers().size() == 1){
-                    DPUser dpUser = DPUser.fromID(event.getMessage().getMentionedUsers().get(0).getId());
-                    Donator donator = new Donator(dpUser, Integer.parseInt(args[2]));
-                }
             }
             //dp!adddonator addNewDonation @wzmianka kwota
             if(args.length == 4){

@@ -13,17 +13,10 @@ public abstract class Emoji {
     protected File imageFile;
     @Expose
     private String fileName;
-    private Color avgColor;
     @Expose
     private String imageUrl;
     @Expose
     protected boolean isActive;
-
-    @Expose
-    protected boolean isCycled;
-
-    @Expose
-    protected boolean isInCycle;
 
     public Emoji(String name, File imageFile){
         this.name = name;
@@ -49,13 +42,6 @@ public abstract class Emoji {
     }
     public void setFileName(String fileName) {
         this.fileName = fileName;
-        JSONSaver.saveOne(this);
-    }
-    public Color getAvgColor(){
-        return this.avgColor;
-    }
-    public void setAvgColor(Color avgColor) {
-        this.avgColor = avgColor;
         JSONSaver.saveOne(this);
     }
     public String getImageUrl() {

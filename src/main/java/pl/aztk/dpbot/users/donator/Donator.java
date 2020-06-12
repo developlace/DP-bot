@@ -58,8 +58,6 @@ public class Donator {
 
         //po prostu sprawdzic limity procentowe osob + 1
 
-        int tens = (donatorsList.size() / 10) + 1;
-
         donatorsList.sort((d1, d2) -> d2.getAmountDonated() - d1.getAmountDonated());
         int top10 = (int) (donatorsList.size() * 0.1);
         if(donatorsList.size() == 0){

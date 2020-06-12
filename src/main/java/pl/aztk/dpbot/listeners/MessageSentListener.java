@@ -24,8 +24,6 @@ import java.util.*;
 
 public class MessageSentListener extends ListenerAdapter{
 
-    public int swearLimit = 35;
-
     private final BlacklistCheck blacklistCheck = new BlacklistCheck();
     private final BotCheck botCheck = new BotCheck();
     private final CommandCheck commandCheck = new CommandCheck();
