@@ -25,7 +25,7 @@
 - Final refactor of DoProgramowaniaBot class removing some ugly static memory-leaking-hog of a code. It had to be done so I won't embarrass myself even more. It just had to.
   As a result, added "hardcoded" package and classes to remove a lot of static fields from DoProgramowaniaBot class which were causing memory leaks.
 
-  Therefore, after almost one year (last major refactor on 25.06.2020), planned refactoring of the code has been completed.
+  Therefore, after almost one year (last major refactor on 25.06.2019), planned refactoring of the code has been completed.
 
 There are still some TODOs and static utils which could be updated, but this project won't be in active development any longer. It's just too big for the current needs.
 
